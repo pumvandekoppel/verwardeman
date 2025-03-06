@@ -4,7 +4,7 @@
 # HTML micro-now tool
 
 
-rightnowdir = "/your/path/to/now/"
+rightnowdir = "~/rightnow/"
 
 import os
 import sys
@@ -18,7 +18,6 @@ import markdown
 
 def main(argv, verbose=False):
   rightnow = argv[0]
-    
   # dot dot dot
   if not (rightnow.endswith('.') or rightnow.endswith('…') or rightnow.endswith('!') or rightnow.endswith('?')):
     rightnow = rightnow + "."  
@@ -28,7 +27,7 @@ def main(argv, verbose=False):
   now_html = markdown.markdown(rightnow, extensions=[LinkifyExtension()])
   
   # read and update /now  
-  rightnow_doc = os.path.join(nowdir,"index.html")
+  rightnow_doc = os.path.join(rightnowdir,"index.html")
   with open(rightnow_doc, "r") as f:
     # make soup
     soup = BeautifulSoup(f, 'html5lib')
@@ -64,6 +63,6 @@ def main(argv, verbose=False):
   sys.exit()
 
 
-if __name__ == "__main__":
-  main(sys.argv[1:])
+#if __name__ == "__main__":
+#  main(sys.argv[1:])
 
