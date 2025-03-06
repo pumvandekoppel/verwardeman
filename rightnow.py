@@ -47,8 +47,8 @@ def main(argv, verbose=False):
     txtrightnow = rightnow_soup.get_text()
     
     # insert content
-    p.append(time)
     main.append(rightnow_soup)
+    p.append(time)
 
     # clean HTML with Tidy
     prettified = soup.prettify(formatter="minimal")
