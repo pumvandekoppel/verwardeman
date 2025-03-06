@@ -32,15 +32,15 @@ def main(argv, verbose=False):
     # make soup
     soup = BeautifulSoup(f, 'html5lib')
     # find main
-    main = soup.find_all("main")[-1]
+    main = soup.find("main")
     rightnow_soup = BeautifulSoup(now_html, 'html.parser')
     
     # what time is it?
     nowtime = datetime.date.today()
     time = soup.new_tag("time")    
-    time.string = nowtime.strftime("%d/%m/%Y").strip()
+    time.string = nowtime.strftime("%d-%m-%Y").strip()
 
-    # find p
+    # find last p
     p = rightnow_soup.find_all("p")[-1]
     
     # create a plain text version (for commit message)
@@ -48,7 +48,7 @@ def main(argv, verbose=False):
     
     # insert content
     main.append(rightnow_soup)
-    p.append(time)
+    p.insert(time,0)
 
     # clean HTML with Tidy
     prettified = soup.prettify(formatter="minimal")
