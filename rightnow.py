@@ -38,7 +38,7 @@ def main(argv, verbose=False):
     # what time is it?
     nowtime = datetime.date.today()
     time = soup.new_tag("time")    
-    time.string = nowtime.strftime("%d-%m-%Y").strip()
+    time.string = nowtime.strftime("%d/%m/%Y").strip()
 
     # find last p
     p = rightnow_soup.find_all("p")[-1]
