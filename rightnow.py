@@ -32,7 +32,7 @@ def main(argv, verbose=False):
     # make soup
     soup = BeautifulSoup(f, 'html5lib')
     # find main
-    main = soup.findLast("main")
+    main = soup.find_all("main")[-1]
     rightnow_soup = BeautifulSoup(now_html, 'html.parser')
     
     # what time is it?
@@ -41,7 +41,7 @@ def main(argv, verbose=False):
     time.string = nowtime.strftime("%d/%m/%Y").strip()
 
     # find p
-    p = rightnow_soup.findLast("p")
+    p = rightnow_soup.find_all("p")[-1]
     
     # create a plain text version (for commit message)
     txtrightnow = rightnow_soup.get_text()
