@@ -4,7 +4,7 @@
 # HTML micro-now tool
 
 
-rightnowdir = "~/rightnow/"
+rightnowdir = "/home/pumvandekoppel/rightnow/"
 
 import os
 import sys
@@ -32,7 +32,7 @@ def main(argv, verbose=False):
     # make soup
     soup = BeautifulSoup(f, 'html5lib')
     # find main
-    main = soup.find("main")
+    main = soup.findLast("main")
     rightnow_soup = BeautifulSoup(now_html, 'html.parser')
     
     # what time is it?
@@ -41,7 +41,7 @@ def main(argv, verbose=False):
     time.string = nowtime.strftime("%d/%m/%Y").strip()
 
     # find p
-    p = rightnow_soup.find("p")
+    p = rightnow_soup.findLast("p")
     
     # create a plain text version (for commit message)
     txtrightnow = rightnow_soup.get_text()
@@ -64,5 +64,5 @@ def main(argv, verbose=False):
 
 
 #if __name__ == "__main__":
-#  main(sys.argv[1:])
+main(sys.argv[1:])
 
