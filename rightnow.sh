@@ -5,7 +5,7 @@ echo "What are you listening to right now ? "
 read now
 
 cd ~/rightnow/
-source ~rightnow/env/activate
+# source ~rightnow/env/activate
 rightnow=`python ~/rightnow/rightnow.py "$now"`
 
 message="Right now: $rightnow"
