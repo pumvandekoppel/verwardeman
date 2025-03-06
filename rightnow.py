@@ -19,8 +19,8 @@ import markdown
 def main(argv, verbose=False):
   rightnow = argv[0]
   # dot dot dot
-  if not (rightnow.endswith('.') or rightnow.endswith('…') or rightnow.endswith('!') or rightnow.endswith('?')):
-    rightnow = rightnow + "."  
+  #if not (rightnow.endswith('.') or rightnow.endswith('…') or rightnow.endswith('!') or rightnow.endswith('?')):
+  #  rightnow = rightnow + "."  
 
   # transform passed markdown to HTML (wrapped in <p>), with linkify extension
   # so that raw URLs are linkified
