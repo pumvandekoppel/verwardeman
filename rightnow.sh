@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
 echo "Hey."
-echo "What are you doing right now ? "
+echo "What are you listening to right now ? "
 read now
 
-cd /your/path/to/now/
-source /your/path/to/now/env/activate
-rightnow=`python /your/path/to/now/rightnow.py "$now"`
+cd ~/rightnow/
+source ~rightnow/env/activate
+rightnow=`python ~/rightnow/rightnow.py "$now"`
 
 message="Right now: $rightnow"
 
