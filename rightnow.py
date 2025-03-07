@@ -31,8 +31,8 @@ def main(argv, verbose=False):
   with open(rightnow_doc, "r") as f:
     # make soup
     soup = BeautifulSoup(f, 'html5lib')
-    # find main
-    main = soup.find("main")
+    # find h1
+    h1 = soup.find("h1")
     rightnow_soup = BeautifulSoup(now_html, 'html.parser')
     
     # what time is it?
@@ -48,7 +48,7 @@ def main(argv, verbose=False):
     
     # insert content
     p.insert(0,time)
-    main.insert(0,rightnow_soup)
+    h1.insert_after(rightnow_soup)
 
     # clean HTML with Tidy
     prettified = soup.prettify(formatter="minimal")
