@@ -40,15 +40,15 @@ def main(argv, verbose=False):
     time = soup.new_tag("time")    
     time.string = nowtime.strftime("%d/%m/%Y").strip()
 
-    # find last p
-    p = rightnow_soup.find_all("p")[-1]
+    # find first p
+    p = rightnow_soup.find("p")
     
     # create a plain text version (for commit message)
     txtrightnow = rightnow_soup.get_text()
     
     # insert content
-    main.append(rightnow_soup)
     p.insert(0,time)
+    main.insert(0,rightnow_soup)
 
     # clean HTML with Tidy
     prettified = soup.prettify(formatter="minimal")
