@@ -1,527 +1,252 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>
-      tracklist verwardeman
-    </title>
-    <style>
-    @font-face {
-                        font-family: 'Liberation Mono';
-                        src: url('/LibrationMono-Regular.ttf') format('truetype');
-                        /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-                }
 
-                html {
-                        height: 100%;
-                }
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Radio TNP <br> 13/09/2025</title>
+	<style>
+		main {
+			max-width: 38rem;
+			padding: 2rem;
+			padding-left: 0;
+			padding-right: 0;
+			margin: auto;
+		}
 
-                body {
-                        line-height: 1.43;
-                        font-family: 'Liberation Mono', monospace;
-                        height: 100%;
-                        font-size: 1em
-                }
+		html {
+			max-width: 70ch;
+			padding: 3rem 1rem;
+			margin: auto;
+			line-height: 1.75;
+			font-size: 1.25rem;
+			font-family: monospace, monospace;
+		}
 
-                main {
-                        height: auto;
-                        padding-bottom: 40px;
-                }
+		h1,
+		h3 {
+			display: flex;
+			margin: auto;
+			text-align: center;
+			justify-content: center;
+			align-items: center;
+			gap: 0.5rem;
+		}
 
-                h1 {
-                        font-size: 1em;
-                        user-select: all;
-                        margin: 0;
-                        margin-bottom: 0.5em;
-                }
+		h3 {
 
-                p {
-                        user-select: all;
-                        margin: 0;
-                        margin-bottom: 0.5em;
-                }
+			font-weight: normal;
+			font-size: 1rem;
+		}
 
+		h3 a {
+			cursor: alias;
+		}
 
-                time {
-                        padding-right: 1.1em;
-                        opacity: .5;
-                        user-select: none;
-                }
+		button {
+			position: relative;
+			padding: 0.5rem;
+			margin: 0.25rem;
+			font-family: inherit;
+			font-size: 1rem;
+			font-weight: 700;
+		}
 
-                a {
-                        color: currentColor;
-                }
+		button:hover {
+			cursor: pointer;
+		}
 
-                footer {
-                        position: fixed;
-                        height: 1.43em;
-                        bottom: 0;
-                        width: 100vw;
-                        margin-left: -.72em;
-                        color: white;
-                        background-color: black;
-                        padding: .45em;
-                        margin-bottom: 0;
-                }
+		small {
+			padding: 2rem;
+			margin: auto;
+		}
 
-                footer span {
-                        margin-right: .45em;
-                }
+		#player__container {
+			display: flex;
+			flex-direction: column;
+			gap: 0.5rem;
+			padding: 0.33rem 0.5rem;
+		}
 
-                footer a {
-                        text-decoration: none;
-                        margin-left: 6px;
-                }
+		#player {
+			display: block;
+			margin: auto;
+		}
 
-                footer a:hover {
-                        text-decoration: underline;
-                }
+		button .upside-down {
+			margin-top: 3px;
+			display: inline-block;
+			-webkit-transform: rotate(180deg);
+			transform: rotate(180deg);
+		}
 
-                @media screen and (max-width: 700px) {
-                        time {
-                                display: block;
+		#buttons {
+			display: flex;
+			justify-content: center;
+			gap: 1rem;
+		}
 
-                        }
-                }
-    </style>
-  </head>
-  <body>
-    <main>
-      <h1>
-        <time>tracklist:</time>
-      </h1>
-      <p>
-        <time>29/06/2025</time> Paul Wall - Girl
-      </p>
-      <p>
-        <time>24/06/2025</time> Pinkpantheress - Close to you
-      </p>
-      <p>
-        <time>04/06/2025</time> Cocorosie - Honey or Tar
-      </p>
-      <p>
-        <time>19/05/2025</time> The Alchemist - Falling Deeper &amp; Deeper
-      </p>
-      <p>
-        <time>15/05/2025</time> Arca - Puta
-      </p>
-      <p>
-        <time>14/05/2025</time> J. Albert - Soma
-      </p>
-      <p>
-        <time>07/05/2025</time> billy woods - Misery
-      </p>
-      <p>
-        <time>06/05/2025</time> Henkie T - Moven
-      </p>
-      <p>
-        <time>06/05/2025</time> Westside Gunn - Why I do em Like that
-      </p>
-      <p>
-        <time>03/05/2025</time> Brother May - Finish What I Started
-      </p>
-      <p>
-        <time>03/05/2025</time> Deerhoof - Flower
-      </p>
-      <p>
-        <time>01/05/2025</time> Bowery Electric - Beat
-      </p>
-      <p>
-        <time>27/04/2025</time> The Durutti Column - Abstract Of Expression
-      </p>
-      <p>
-        <time>26/04/2025</time> Milk Eyed Sigh - Depth of Fulwood
-      </p>
-      <p>
-        <time>24/04/2025</time> Lorde - What Was That
-      </p>
-      <p>
-        <time>24/04/2025</time> Sun Ra &amp; His Arkestra - Springtime Again
-      </p>
-      <p>
-        <time>20/04/2025</time> Chess Type Beat Slowed
-      </p>
-      <p>
-        <time>18/04/2025</time> Elysia Crampton Chuquimia - Wing (ft Money Allah)
-      </p>
-      <p>
-        <time>18/04/2025</time> Spinvis - Lotus Europa
-      </p>
-      <p>
-        <time>17/04/2025</time> MIKE - Prezzy
-      </p>
-      <p>
-        <time>14/04/2025</time> Galcher Lustwerk - Come Over
-      </p>
-      <p>
-        <time>14/04/2025</time> DRAKEO The Ruler - Betchua Freestyle
-      </p>
-      <p>
-        <time>13/04/2025</time> Bryson Tiller - Inhale
-      </p>
-      <p>
-        <time>12/04/2025</time> Homeboy Sandman - The Only Constant
-      </p>
-      <p>
-        <time>12/04/2025</time> Jabu - Ashes Over Shute Shelve
-      </p>
-      <p>
-        <time>12/04/2025</time> Mula B &amp; Louivos - Geel (feat. Bartofso)
-      </p>
-      <p>
-        <time>12/04/2025</time> AYYA - Second Mistake
-      </p>
-      <p>
-        <time>10/04/2025</time> Trystero - 賛辞
-      </p>
-      <p>
-        <time>08/04/2025</time> Jonh Glacier - Dancing In The Rain
-      </p>
-      <p>
-        <time>08/04/2025</time> Caribou - 218 Beverly
-      </p>
-      <p>
-        <time>07/04/2025</time> Jabu - Košice Flower
-      </p>
-      <p>
-        <time>07/04/2025</time> Yellow Swans - Comedy Hypnosis
-      </p>
-      <p>
-        <time>02/04/2025</time> Devin the Dude - Do What You Wanna Do
-      </p>
-      <p>
-        <time>01/04/2025</time> Boaz Van De Beatz - Serving (feat. Ronnie Flex)
-      </p>
-      <p>
-        <time>01/04/2025</time> Kraftwerk - Expo 2000
-      </p>
-      <p>
-        <time>31/03/2025</time> De Schuurman - Brass
-      </p>
-      <p>
-        <time>30/03/2025</time> SATI - Pabudimas
-      </p>
-      <p>
-        <time>30/03/2025</time> Yves Tumor - The Feeling When You Walk Away
-      </p>
-      <p>
-        <time>28/03/2025</time> Eartheater - Shark Brain (feat. Shygirl)
-      </p>
-      <p>
-        <time>26/03/2025</time> Oklou - entertnmnt (prod. by Mura Masa)
-      </p>
-      <p>
-        <time>26/03/2025</time> DJ Python - Dai Buki (ft Jawnino)
-      </p>
-      <p>
-        <time>25/03/2025</time> Aphex Twin - IZ-US
-      </p>
-      <p>
-        <time>25/03/2025</time> PJ Harvey - The Mountain
-      </p>
-      <p>
-        <time>25/03/2025</time> Aldous Harding - Blend
-      </p>
-      <p>
-        <time>25/03/2025</time> Spinvis - We Kunnen Niet Zoveel
-      </p>
-      <p>
-        <time>25/03/2025</time> CocoRosie - CandyLand
-      </p>
-      <p>
-        <time>25/03/2025</time> Spinvis - Artis
-      </p>
-      <p>
-        <time>25/03/2025</time> Homeboy Sandman - Life Support
-      </p>
-      <p>
-        <time>20/03/2025</time> Oklou - face B ( Defeat )
-      </p>
-      <p>
-        <time>19/03/2025</time> Scott Grooves - Decimal 1
-      </p>
-      <p>
-        <time>19/03/2025</time> Woesum &amp; Gud - L.L.L.
-      </p>
-      <p>
-        <time>19/03/2025</time> MaxNormal.TV - Tik Tik Tik
-      </p>
-      <p>
-        <time>18/03/2025</time> Coldplay - Strawberry Swing
-      </p>
-      <p>
-        <time>18/03/2025</time> Cortisa Star - Paris
-      </p>
-      <p>
-        <time>18/03/2025</time> Barry Can't Swim - Different
-      </p>
-      <p>
-        <time>18/03/2025</time> Scott Grooves - It Doesn't All Have To Be Techy
-      </p>
-      <p>
-        <time>17/03/2025</time> Adamn Killa - Dance
-      </p>
-      <p>
-        <time>17/03/2025</time> FKA twigs - meta angel
-      </p>
-      <p>
-        <time>17/03/2025</time> Eartheater - The Internet Is Handmade
-      </p>
-      <p>
-        <time>17/03/2025</time> ZazaZozo - Woke up as a Wolf
-      </p>
-      <p>
-        <time>16/03/2025</time> Bhad Bhabie - OG CRASHOUT
-      </p>
-      <p>
-        <time>15/03/2025</time> Otto - Guess My Crush
-      </p>
-      <p>
-        <time>15/03/2025</time> Doevoe - Sociale Huur
-      </p>
-      <p>
-        <time>15/03/2025</time> water - pop
-      </p>
-      <p>
-        <time>12/03/2025</time> Eartheater - Airborne Ashes (Eartheater &amp; Aleksandir Remix)
-      </p>
-      <p>
-        <time>11/03/2025</time> Zaltsman - Let There Be Rain
-      </p>
-      <p>
-        <time>11/03/2025</time> Dinamarca - Nena
-      </p>
-      <p>
-        <time>11/03/2025</time> Tshegue - Plus de place nulle part
-      </p>
-      <p>
-        <time>10/03/2025</time> Helado Negro - Best For You and Me
-      </p>
-      <p>
-        <time>10/03/2025</time> Galcher Lustwerk - What's the point of house?
-      </p>
-      <p>
-        <time>10/03/2025</time> Downhill2k01 - So Mote It Be
-      </p>
-      <p>
-        <time>10/03/2025</time> Loidis - Sugar Snot
-      </p>
-      <p>
-        <time>10/03/2025</time> Oklou - take me by the hand ft. Bladee
-      </p>
-      <p>
-        <time>10/03/2025</time> Nicolas Jaar - Wouh
-      </p>
-      <p>
-        <time>10/03/2025</time> Park Hye Jin - Shut Up Give Me Kiss
-      </p>
-      <p>
-        <time>10/03/2025</time> Devin The Dude - Briar Patch (Screwed)
-      </p>
-      <p>
-        <time>09/03/2025</time> Herbie Hancock - Vein Melter
-      </p>
-      <p>
-        <time>09/03/2025</time> DJ ESCO - Code of Honor ft. Future, ScHoolboy Q
-      </p>
-      <p>
-        <time>09/03/2025</time> CN - Stellar Awakening
-      </p>
-      <p>
-        <time>09/03/2025</time> arc vale - am I in danger
-      </p>
-      <p>
-        <time>09/03/2025</time> Yuji Toriyama - Donna
-      </p>
-      <p>
-        <time>09/03/2025</time> The Stranglers - Love 30
-      </p>
-      <p>
-        <time>09/03/2025</time> Aldous Harding - Weight of the Planets
-      </p>
-      <p>
-        <time>09/03/2025</time> B. Calloway - Direct Maniac
-      </p>
-      <p>
-        <time>09/03/2025</time> fakemink - Ibiza
-      </p>
-      <p>
-        <time>09/03/2025</time> Slowdive - Shine
-      </p>
-      <p>
-        <time>09/03/2025</time> Tindersticks - Petites chiennes
-      </p>
-      <p>
-        <time>09/03/2025</time> NEW YORK - ginger candy
-      </p>
-      <p>
-        <time>09/03/2025</time> Bokoedro - Blauwe Rook
-      </p>
-      <p>
-        <time>09/03/2025</time> Phiik &amp; Lungs - Left the Game Dizzy
-      </p>
-      <p>
-        <time>09/03/2025</time> Louivos - Andre Hazes
-      </p>
-      <p>
-        <time>09/03/2025</time> Park Hye Jin - See So (I Can Hear Your Heart)
-      </p>
-      <p>
-        <time>08/03/2025</time> Björk - Heirloom
-      </p>
-      <p>
-        <time>08/03/2025</time> J. Albert - periodico cantado
-      </p>
-      <p>
-        <time>08/03/2025</time> Da Hool - Meet her at the love parade
-      </p>
-      <p>
-        <time>08/03/2025</time> Negroman - Bauchredner
-      </p>
-      <p>
-        <time>08/03/2025</time> Lala &amp;ce - Butterfly Finesse (Boogie Mane)
-      </p>
-      <p>
-        <time>08/03/2025</time> Busta Flex - Pourquoi
-      </p>
-      <p>
-        <time>08/03/2025</time> Haiyti - zu real
-      </p>
-      <p>
-        <time>08/03/2025</time> Portishead - Machine Gun
-      </p>
-      <p>
-        <time>08/03/2025</time> 250 - Bang Bus
-      </p>
-      <p>
-        <time>08/03/2025</time> Balming Tiger - Buriburi
-      </p>
-      <p>
-        <time>08/03/2025</time> Fcukers - Mothers
-      </p>
-      <p>
-        <time>08/03/2025</time> Sonic Youth - Bull in the Heather
-      </p>
-      <p>
-        <time>08/03/2025</time> Cocorosie - Devil's Island
-      </p>
-      <p>
-        <time>08/03/2025</time> La Prendia - Te La Detete
-      </p>
-      <p>
-        <time>08/03/2025</time> Yaeji - Pondeggi (feat. E Wata)
-      </p>
-      <p>
-        <time>08/03/2025</time> Katice - Sestrice
-      </p>
-      <p>
-        <time>08/03/2025</time> Park Hye Jin - Can you
-      </p>
-      <p>
-        <time>08/03/2025</time> Omar S and Kai Alce - Not Phazed
-      </p>
-      <p>
-        <time>08/03/2025</time> Kraftwerk - Computer Love
-      </p>
-      <p>
-        <time>08/03/2025</time> Corrie - Blast
-      </p>
-      <p>
-        <time>08/03/2025</time> 1905, DJ Pirna - ZIP ZIP ZIP
-      </p>
-      <p>
-        <time>08/03/2025</time> Sun Ra - Tenderness
-      </p>
-      <p>
-        <time>08/03/2025</time> Tatiana Nikolayeva - Shostakovich: 24 Preludes &amp; Fugues, Op. 87: No. 4a, Prelude in E Minor
-      </p>
-      <p>
-        <time>08/03/2025</time> KUT MUG - MISDAAD
-      </p>
-      <p>
-        <time>08/03/2025</time> Larry June, 2Chainz &amp; The Alchemist - Generation
-      </p>
-      <p>
-        <time>08/03/2025</time> Lijpe - Waar Ik Morgen Ben
-      </p>
-      <p>
-        <time>07/03/2025</time> Moin - Cubby
-      </p>
-      <p>
-        <time>07/03/2025</time> Pete Philly &amp; Perquisite - Mystery Repeats
-      </p>
-      <p>
-        <time>07/03/2025</time> Le Le - Skinny Jeans
-      </p>
-      <p>
-        <time>07/03/2025</time> NEW YORK - skinny jeans
-      </p>
-      <p>
-        <time>07/03/2025</time> Sonic Youth - Improvisation Ajoutee
-      </p>
-      <p>
-        <time>07/03/2025</time> Ethel Cain - Onanist
-      </p>
-      <p>
-        <time>07/03/2025</time> Armand Hammer &amp; The Alchemist "Falling Out the Sky" feat. Earl Sweatshirt
-      </p>
-      <p>
-        <time>07/03/2025</time> Viagra Boys - Just Like You
-      </p>
-      <p>
-        <time>07/03/2025</time> FKA twigs - 24hr Dog
-      </p>
-      <p>
-        <time>07/03/2025</time> Bogdan Raczynski - ALDDE
-      </p>
-      <p>
-        <time>07/03/2025</time> Kelman Duran - Laine
-      </p>
-      <p>
-        <time>07/03/2025</time> library mutter
-      </p>
-      <p>
-        <time>07/03/2025</time> Dean Blunt and Inga Copeland - Heel Turn (Vocal Version)
-      </p>
-      <p>
-        <time>07/03/2025</time> Scott Grooves - 3/4 Part: Mono Waltz
-      </p>
-      <p>
-        <time>07/03/2025</time> Devin the Dude - What a Job (feat. Snoop Dogg, Andre 3000)
-      </p>
-      <p>
-        <time>07/03/2025</time> The Durutti Column - Grace
-      </p>
-      <p>
-        <time>07/03/2025</time> Dwin &amp; Kush Kush - TOKYO
-      </p>
-      <p>
-        <time>06/03/2025</time> Jeigo - 180395 Brock Groove
-      </p>
-      <p>
-        <time>06/03/2025</time> Lonnie Liston Smith - Garden of Peace
-      </p>
-      <p>
-        <time>06/03/2025</time> Loren Nerell, Mark Seelig - Acacia
-      </p>
-      <p>
-        <time>06/03/2025</time> Westside Gunn - HEALTH SCIENCE (feat. Brother Tom Sos)
-      </p>
-      <p>
-        <time>06/03/2025</time> Call Super - Swallow Me
-      </p>
-      <p>
-        <time>06/03/2025</time> The Knife - Still Light
-      </p>
-      <p>
-        <time>06/03/2025</time> The Kitchen - You Are The Voice
-      </p>
-    </main>
-    <footer style="margin-top:auto;">
-      <p>
-        <a href="mailto:bookverwardeman@gmail.com">bookverwardeman@gmail.com</a>
-      </p>
-    </footer>
-  </body>
+		#playlist {
+			border: 0.25rem dotted #000;
+			padding: 1rem;
+			list-style-position: inside;
+		}
+
+		ol#playlist li a {
+			text-decoration: none;
+			/* -webkit-touch-callout: none; */
+			/* -webkit-user-select: none; */
+			/* -khtml-user-select: none; */
+			/* -moz-user-select: none; */
+			/* -ms-user-select: none; */
+			/* user-select: none; */
+			/* pointer-events: none; */
+			/* -webkit-user-drag: none; */
+			/* user-drag: none; */
+		}
+
+		ol#playlist li a:hover {
+			cursor: pointer;
+			text-decoration: underline;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Radio TNP <br> 13/09/2025</h1>
+		<h3>by <a href="https://soundcloud.com/verwardeman">verwardeman</a></h3>
+	</header>
+	<main>
+		<div id="player__container">
+			<audio id="player" preload="auto" tabindex="0" controls controlsList="nodownload">
+				<source src="/home/pumvandekoppel/Documenten/websites/verwardeman/tnp-13092025/01 - Andi Jackson - Movement 1.mp3 " />
+			</audio>
+			<div id="buttons">
+				<button id="previous">
+					<span aria-hidden="true" class="upside-down">⟿</span>
+				</button>
+				<button id="next"><span aria-hidden="true"></span>⟿</button>
+			</div>
+		</div>
+		<ol id="playlist">
+<li><a class="track" href="/home/pumvandekoppel/Documenten/websites/verwardeman/tnp-13092025/01 - Andi Jackson - Movement 1.mp3">Andi Jackson - Movement 1</a>
+<li><a class="track" href="/home/pumvandekoppel/Documenten/websites/verwardeman/tnp-13092025/02 - imaginary prisons - 2025-06-04.mp3">imaginary prisons - 2025-06-04</a>
+<li><a class="track" href="/home/pumvandekoppel/Documenten/websites/verwardeman/tnp-13092025/03 - Basic House - Holding a Dead Hand.mp3">Basic House - Holding a Dead Hand</a>
+<li><a class="track" href="/home/pumvandekoppel/Documenten/websites/verwardeman/tnp-13092025/04 - Milk Eyed Sigh - Billy's Song.mp3">Milk Eyed Sigh - Billy's Song</a>
+<li><a class="track" href="/home/pumvandekoppel/Documenten/websites/verwardeman/tnp-13092025/05 - Spivak - Sec.mp3">Spivak - Sec</a>
+<li><a class="track" href="/home/pumvandekoppel/Documenten/websites/verwardeman/tnp-13092025/06 - Al Dobson Jr - Columbian Special.mp3">Al Dobson Jr - Columbian Special</a>
+<li><a class="track" href="/home/pumvandekoppel/Documenten/websites/verwardeman/tnp-13092025/07 - Anysia Kym & Tony Seltzer - Diamonds & Pearls.mp3">Anysia Kym & Tony Seltzer - Diamonds & Pearls</a>
+<li><a class="track" href="/home/pumvandekoppel/Documenten/websites/verwardeman/tnp-13092025/08 - Lauren Duffus - Soho Road (Crying Song).mp3">Lauren Duffus - Soho Road (Crying Song)</a>
+<li><a class="track" href="/home/pumvandekoppel/Documenten/websites/verwardeman/tnp-13092025/09 - Tatiana Nikolayeva - Shostakovich Op. 87_ No. 4a, Prelude in E Minor.mp3">Tatiana Nikolayeva - Shostakovich Op. 87_ No. 4a, Prelude in E Minor</a>
+<li><a class="track" href="/home/pumvandekoppel/Documenten/websites/verwardeman/tnp-13092025/10 - Z▲Z▲Z◎Z◎ - Numbers Makes Me Cry.mp3">Z▲Z▲Z◎Z◎ - Numbers Makes Me Cry</a>
+<li><a class="track" href="/home/pumvandekoppel/Documenten/websites/verwardeman/tnp-13092025/11 - Nu Seeka - No Apparition.mp3">Nu Seeka - No Apparition</a>
+<li><a class="track" href="/home/pumvandekoppel/Documenten/websites/verwardeman/tnp-13092025/12 - klaus - Strafe.mp3">klaus - Strafe</a>
+<li><a class="track" href="/home/pumvandekoppel/Documenten/websites/verwardeman/tnp-13092025/13 - Nina Harker - Le Pont à Voiles.mp3">Nina Harker - Le Pont à Voiles</a>
+<li><a class="track" href="/home/pumvandekoppel/Documenten/websites/verwardeman/tnp-13092025/14 - MM-KM - Orangenschalen.mp3">MM-KM - Orangenschalen</a>
+<li><a class="track" href="/home/pumvandekoppel/Documenten/websites/verwardeman/tnp-13092025/15 - John T. Gast - LATENIGHT B.mp3">John T. Gast - LATENIGHT B</a>
+<li><a class="track" href="/home/pumvandekoppel/Documenten/websites/verwardeman/tnp-13092025/16 - Sonic Youth - Tremens.mp3">Sonic Youth - Tremens</a>
+<li><a class="track" href="/home/pumvandekoppel/Documenten/websites/verwardeman/tnp-13092025/17 - Soapkills - Galbi.mp3">Soapkills - Galbi</a>
+<li><a class="track" href="/home/pumvandekoppel/Documenten/websites/verwardeman/tnp-13092025/18 - RZA - You'll Never Know (feat. Cilvaringz).mp3">RZA - You'll Never Know (feat. Cilvaringz)</a>
+<li><a class="track" href="/home/pumvandekoppel/Documenten/websites/verwardeman/tnp-13092025/19 - Willem Breuker - Beauty (70).mp3">Willem Breuker - Beauty (70)</a>
+<li><a class="track" href="/home/pumvandekoppel/Documenten/websites/verwardeman/tnp-13092025/20 - Omar S - Omar S featuring Omar S (Instrumental).mp3">Omar S - Omar S featuring Omar S (Instrumental)</a>
+<li><a class="track" href="/home/pumvandekoppel/Documenten/websites/verwardeman/tnp-13092025/21 - Shukar Collective - Mamo.mp3">Shukar Collective - Mamo</a>
+<li><a class="track" href="/home/pumvandekoppel/Documenten/websites/verwardeman/tnp-13092025/22 - J. Albert - 22.mp3">J. Albert - 22</a>
+<li><a class="track" href="/home/pumvandekoppel/Documenten/websites/verwardeman/tnp-13092025/23 - NGLY - Speechless Tape.mp3">NGLY - Speechless Tape</a>
+		</ol>
+	</main>
+	<footer>
+		<small>inquiries at bookverwardeman@gmail.com</small>
+		<br>
+		<small>tracklist made with
+			<a href="https://codeberg.org/stringbone/shmixtape">shmixtape</a> by
+			<a href="http://www.milofultz.com">milo fultz</a></small>
+	</footer>
+	<script type="text/javascript">
+		window.addEventListener('DOMContentLoaded', function () {
+			let current = 0;
+			const audio = document.getElementById('player');
+			const playlist = document.getElementById('playlist');
+			const tracks = playlist.querySelectorAll('li a.track');
+			const len = tracks.length;
+			let link;
+
+			playlist.addEventListener('click', (e) => {
+				e.preventDefault();
+				const target = e.target;
+				// Ignore anything that isn't what we're looking for
+				if (target.tagName === 'A' && target.classList.contains('track')) {
+					parent = target.parentNode;
+					current = [...parent.parentNode.children].indexOf(parent);
+					play(target, audio);
+				}
+			});
+
+			audio.addEventListener('ended', () => playNext());
+
+			document.getElementById('next').addEventListener('click', function (e) {
+				playNext();
+			});
+
+			document
+				.getElementById('previous')
+				.addEventListener('click', function (e) {
+					playPrev();
+				});
+
+			function playPrev() {
+				current--;
+				if (current < 0) {
+					current = len - 1;
+				}
+				link = playlist.querySelectorAll('a.track')[current];
+				play(link, audio);
+			}
+
+			function playNext() {
+				current++;
+				if (current === len) {
+					current = 0;
+				}
+				link = playlist.querySelectorAll('a.track')[current];
+				play(link, audio);
+			}
+
+			/**
+			 * Fetches the audio for the next track without loading
+			 * it in a functional player so the asset can get loaded
+			 * prior to playing.
+			 */
+			function preloadNextTrack(link) {
+				const nextLi = link.parentNode.nextElementSibling;
+				if (nextLi) {
+					const track = nextLi.querySelectorAll('a.track')[0];
+					const audio = new Audio();
+					audio.src = track.href;
+				}
+				// If last track in playlist, do nothing
+				return null;
+			}
+
+			function play(link, player) {
+				player.src = link.href;
+				const par = link.parentNode;
+				[...par.parentNode.children]
+					.filter((child) => child !== par)
+					.forEach((li) => li.classList.remove('active'));
+				par.classList.add('active');
+				player.load();
+				player.play();
+				preloadNextTrack(link);
+			}
+
+			if ('mediaSession' in navigator) {
+				// Listen for MediaSession events
+				navigator.mediaSession.setActionHandler('nexttrack', playNext);
+				navigator.mediaSession.setActionHandler('previoustrack', playPrev);
+			}
+		});
+	</script>
+</body>
+
 </html>
